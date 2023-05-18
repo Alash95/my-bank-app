@@ -28,7 +28,7 @@ public class User {
     @Column(nullable = false)
     private String lastName;
     private String otherName;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     @Size(min = 10, max = 10)
     private String accountNumber;
     private double accountBalance;
